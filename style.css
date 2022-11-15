@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: url(./photos/header.jpg);
+    opacity: 0.8;
+    background-size: cover;
+}
+
+
+h1 {
+    color: black;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.news {
+    background-color: rgb(152, 194, 245, 0.5);
+    padding: 50px;
+}
+
+article:nth-child(even) {
+    background-color: rgb(157, 204, 242, 0.5);
+}
+
+article {
+    background-color: #a7d6ef;
+    width: 768;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(1, 1, 1)
+}
+
+article a {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+article a.read-more {
+    text-decoration: underline grey;
+}
+
+article a:hover {
+    color: #0085a1;
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+article h2.newnews::after {
+    content: "NEW";
+    color: red;
+    font-weight: 550; 
+    font-style: italic; 
+    margin-left: 10px;
+}
+
+
+.article-meta {
+color: rgb(134, 142, 150);
+margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.text {
+    font-style: italic;
+}
+
+
+footer {
+    border-top: solid gray;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: rgb(152, 194, 245, 0.8);
+}
+
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+color: rgb(108, 117, 125);
+font-family: 'Times New Roman', Times, serif;
+}
